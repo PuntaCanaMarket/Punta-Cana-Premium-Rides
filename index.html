@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punta Cana Premium Rides | Transporte Ejecutivo, Taxi y Tours</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Servicio de taxi, transporte ejecutivo, empresarial y turístico en Punta Cana. Reserva online. Tarifas desde $30 USD. Pagos en dólares, euros, tarjetas, Zelle, CashApp y criptomonedas.">
+    <meta name="keywords" content="transporte en Punta Cana, taxi punta cana, aeropuerto PUJ, transporte ejecutivo punta cana, shuttle, tours punta cana, transporte turístico punta cana">
+    <meta name="author" content="Punta Cana Premium Rides">
+
+    <style>
+        body { margin:0; font-family:Arial, sans-serif; background:#f4f4f4; }
+        header { background:#0b2b47; color:white; padding:20px; text-align:center; }
+        nav { background:#0d3a63; text-align:center; padding:10px; }
+        nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold; }
+
+        /* Hero */
+        .hero {
+            background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=60') center/cover no-repeat;
+            padding:120px 20px;
+            text-align:center;
+            color:white;
+        }
+        .hero h1 { font-size:48px; text-shadow:0px 0px 6px black; }
+        .hero p { font-size:20px; margin-top:10px; }
+
+        /* Servicios */
+        .servicios { padding:40px; background:white; }
+        .servicios h2 { text-align:center; margin-bottom:20px; }
+        .cards { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+        .card {
+            background:#fff; width:300px; border-radius:10px; overflow:hidden;
+            box-shadow:0 3px 10px rgba(0,0,0,0.2);
+        }
+        .card img { width:100%; height:190px; object-fit:cover; }
+        .card h3 { padding:10px; }
+        .card p { padding:0 10px 20px; }
+
+        /* Tarifas */
+        .tarifa {
+            background:#0b2b47; color:white; padding:40px; text-align:center;
+        }
+        .tarifa h2 { font-size:32px; }
+        .tarifa .precio { font-size:50px; font-weight:bold; color:#00eaff; }
+
+        /* Formulario */
+        .reserva { padding:40px; background:#fff; }
+        .form-box {
+            max-width:500px; margin:auto; padding:20px; background:white;
+            border-radius:10px; box-shadow:0 3px 10px rgba(0,0,0,0.2);
+        }
+        .form-box input, .form-box select, .form-box button {
+            width:100%; padding:12px; margin:10px 0; border-radius:5px; border:1px solid #ccc;
+        }
+        .form-box button {
+            background:#0b2b47; color:white; border:none; cursor:pointer;
+        }
+
+        /* Slider pagos */
+        .pagos {
+            background:#e8f3ff; padding:20px; overflow:hidden;
+            white-space:nowrap;
+        }
+        .pagos img {
+            height:45px; margin:0 25px; display:inline-block;
+            animation: slide 12s linear infinite;
+        }
+        @keyframes slide {
+            0% { transform:translateX(100%); }
+            100% { transform:translateX(-100%); }
+        }
+
+        /* WhatsApp */
+        .whatsapp {
+            position:fixed; bottom:20px; right:20px;
+            background:#25D366; color:white; padding:15px 20px;
+            border-radius:50px; text-decoration:none; font-weight:bold;
+            display:flex; align-items:center; gap:10px;
+            box-shadow:0 3px 10px rgba(0,0,0,0.3);
+        }
+
+        /* Popup */
+        #popup {
+            position:fixed; top:0; left:0; width:100%; height:100%;
+            background:rgba(0,0,0,.6); display:flex; justify-content:center;
+            align-items:center; visibility:hidden;
+        }
+        #popup .box {
+            background:white; padding:30px; border-radius:10px; text-align:center;
+            width:300px;
+        }
+        #popup h2 { margin-bottom:15px; }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>Punta Cana Premium Rides</h1>
+    <p>Taxi | Transporte Ejecutivo | Traslados al Aeropuerto | Tours Turísticos</p>
+</header>
+
+<nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#reserva">Reservas</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section class="hero">
+    <h1>Transporte Premium en Punta Cana</h1>
+    <p>Viaje seguro, rápido y confiable. Tarifas desde <strong>US$30</strong>.</p>
+</section>
+
+<!-- Servicios -->
+<section class="servicios" id="servicios">
+    <h2>Servicios Más Solicitados</h2>
+
+    <div class="cards">
+
+        <!-- TAXI -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=800&q=60">
+            <h3>Taxi Aeropuerto PUJ</h3>
+            <p>Traslados directos desde el Aeropuerto de Punta Cana hacia hoteles y resorts.</p>
+        </div>
+
+        <!-- EJECUTIVO -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=60">
+            <h3>Transporte Ejecutivo</h3>
+            <p>Vehículos premium para ejecutivos, reuniones y viajes corporativos.</p>
+        </div>
+
+        <!-- EMPRESARIAL -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=800&q=60">
+            <h3>Transporte Empresarial</h3>
+            <p>Servicios recurrentes para colaboradores, directivos y empresas.</p>
+        </div>
+
+        <!-- TURÍSTICO -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1540206395-68808572332f?auto=format&fit=crop&w=800&q=60">
+            <h3>Tours y Excursiones</h3>
+            <p>Excursiones solicitadas por canadienses, europeos y norteamericanos: Isla Saona, Buggies, Santo Domingo.</p>
+        </div>
+
+        <!-- SHUTTLE -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=60">
+            <h3>Shuttle Privado</h3>
+            <p>Traslados privados entre hoteles, restaurantes y centros comerciales.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Tarifa -->
+<section class="tarifa">
+    <h2>Oferta Especial</h2>
+    <p>Traslados desde</p>
+    <p class="precio">US$30</p>
+    <p>Precio garantizado – Reserva inmediata</p>
+</section>
+
+<!-- Formulario -->
+<section class="reserva" id="reserva">
+    <h2 style="text-align:center;">Reserva en Línea</h2>
+
+    <div class="form-box">
+        <input type="text" placeholder="Nombre completo">
+        <input type="text" placeholder="Teléfono / WhatsApp">
+        <input type="email" placeholder="Correo electrónico">
+        <select>
+            <option>Taxi Aeropuerto PUJ</option>
+            <option>Transporte Ejecutivo</option>
+            <option>Transporte Empresarial</option>
+            <option>Tours & Excursiones</option>
+            <option>Shuttle Privado</option>
+        </select>
+        <input type="date">
+        <button>Reservar Ahora</button>
+    </div>
+</section>
+
+<!-- Slider pagos -->
+<section class="pagos">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Euro_symbol_black.svg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/US_dollar_symbol.svg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Cash_App_Logo.png">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Zelle_logo.png">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tether_USDT_logo.svg">
+</section>
+
+<!-- WhatsApp -->
+<a class="whatsapp" href="https://wa.me/18000000000" target="_blank">
+    💬 WhatsApp
+</a>
+
+<!-- Popup -->
+<div id="popup">
+    <div class="box">
+        <h2 id="pop-title">Bienvenido</h2>
+        <p id="pop-msg">Gracias por visitar Punta Cana Premium Rides</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+</div>
+
+<script>
+    /* Detección de idioma */
+    const lang = navigator.language || navigator.userLanguage;
+    const popup = document.getElementById("popup");
+    const title = document.getElementById("pop-title");
+    const msg = document.getElementById("pop-msg");
+
+    const textos = {
+        es: {
+            title: "¡Bienvenido!",
+            msg: "Gracias por visitar Punta Cana Premium Rides. ¿Listo para tu próximo viaje?"
+        },
+        en: {
+            title: "Welcome!",
+            msg: "Thanks for visiting Punta Cana Premium Rides. Ready for your next ride?"
+        },
+        fr: {
+            title: "Bienvenue!",
+            msg: "Merci de visiter Punta Cana Premium Rides. Prêt pour votre prochain trajet?"
+        }
+    };
+
+    const idioma = lang.substring(0,2);
+    if (textos[idioma]) {
+        title.innerText = textos[idioma].title;
+        msg.innerText = textos[idioma].msg;
+    }
+
+    /* Mostrar popup al cargar */
+    window.onload = () => popup.style.visibility = "visible";
+    function closePopup() { popup.style.visibility = "hidden"; }
+</script>
+
+</body>
+              </html>
+  
